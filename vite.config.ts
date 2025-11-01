@@ -10,6 +10,7 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
+  base: '/ai-ml-projects-portfolio/',
   plugins,
   resolve: {
     alias: {
@@ -22,7 +23,7 @@ export default defineConfig({
   root: path.resolve(import.meta.dirname, "client"),
   publicDir: path.resolve(import.meta.dirname, "client", "public"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: path.resolve(import.meta.dirname, "docs"),
     emptyOutDir: true,
   },
   server: {

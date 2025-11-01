@@ -56,34 +56,91 @@
             </div>
 
             <div class="projects-grid">
+
+                <!-- Project1: Home Ventilation Predictor -->
+                <div class="project-card">
+                    <div class="card-icon">🌤️</div>
+                    <h3 class="card-title">Time Series Forecasting</h3>
+                    <h3 class="project-title">Home Ventilation Predictor</h3>
+                    <p class="card-description">
+                    A simple time-series forecasting app that predicts the <b>optimal time to ventilate a house</b> 
+                    based on hourly indoor and outdoor temperature trends. 
+                    It supports multiple models including <b>SARIMAX</b>, and <b>TimesNet</b>(transformer-based), 
+                    providing temperature forecasts, seasonal adjustments, and hourly time ventilation suggestions.
+                    </p>
+                    <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Matplotlib</span>
+                    <span class="tech-tag">SARIMAX</span>
+                    <span class="tech-tag">TimesNet</span>
+                    <span class="tech-tag">Facebook Prophet</span>
+                    </div>
+                    <span class="warning">Loading time takes a few seconds</span>
+                    <button class="card-btn" onclick="window.open('https://home-ventilation-predictor.onrender.com/', '_blank')">Live Site →</button>
+                </div>
+
                 <!-- Project 1: Regression -->
                 <div class="project-card">
                     <div class="card-icon">📈</div>
-                    <h3 class="card-title">Linear & Polynomial Regression</h3>
+                    <h3 class="card-title">Multiple Linear Regression</h3>
+                    <h5 class="Project-title">Car Price Prediction</h3>
                     <p class="card-description">
-                        Implementation of linear regression with gradient descent optimization and polynomial feature expansion for non-linear relationships.
+                        A regression model built to predict car prices based on key attributes such as 
+                        engine size, horsepower, fuel efficiency, and curb weight. Includes a complete 
+                        Exploratory Data Analysis (EDA), feature correlation study, and model comparison 
+                        between <b>Linear Regression</b>, <b>Ridge</b>, and <b>Lasso</b> to assess 
+                        performance and overfitting.                    
                     </p>
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">NumPy</span>
                         <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Seaborn</span>
                     </div>
-                    <button class="card-btn">Learn More →</button>
+                    <span class="warning">Loading time takes a few seconds</span>
+                    <button class="card-btn" onclick="window.open('https://car-price-predictor-lasso.onrender.com/', '_blank')">Live Site →</button>
+                </div>
+
+                <!-- Project 2: Polinomial Regression -->
+                <div class="project-card">
+                    <div class="card-icon">📈</div>
+                    <h3 class="card-title">Linear Polynomial Regression</h3>
+                    <h5 class="Project-title"> Real Estate Prices (Huse Price)</h3>
+                    <p class="card-description">
+                        A machine learning study analyzing how various urban factors 
+                        (distance to MRT station, building age, convenience stores nearby, etc.) 
+                        influence housing prices in Taipei. Demonstrates how <b>Polynomial Regression</b> 
+                        improves prediction accuracy for non-linear relationships compared to a 
+                        standard linear model, including visualizations and performance metrics.                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Seaborn</span>
+                    </div>
+                    <span class="warning">Loading time takes a few seconds</span>
+                    <button class="card-btn" onclick="window.open('https://house-price-predictor-polynomial.onrender.com', '_blank')">Live Site →</button>
                 </div>
 
                 <!-- Project 2: Decision Trees -->
                 <div class="project-card">
                     <div class="card-icon">🌳</div>
                     <h3 class="card-title">Decision Trees</h3>
+                    <h3 class="project-title">Titanic Survivors Classifier</h3>
                     <p class="card-description">
-                        Building decision trees from scratch with entropy-based splitting criteria, pruning techniques, and visualization of tree structures.
-                    </p>
+                        A machine learning model built using <b>scikit-learn’s DecisionTreeClassifier</b> 
+                        to predict whether a passenger survived the Titanic disaster. The model was trained 
+                        on cleaned and preprocessed passenger data (age, class, sex, family size, and fare), 
+                        with evaluation via cross-validation and visualization of feature importance.                    </p>
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Pandas</span>
                         <span class="tech-tag">Matplotlib</span>
                     </div>
-                    <button class="card-btn">Learn More →</button>
+                    <span class="warning">Loading time takes a few seconds</span>
+                    <button class="card-btn" onclick="window.open('', '_blank')">Live Site →</button>
                 </div>
 
                 <!-- Project 3: Random Forest -->
@@ -98,7 +155,8 @@
                         <span class="tech-tag">Scikit-learn</span>
                         <span class="tech-tag">Ensemble Methods</span>
                     </div>
-                    <button class="card-btn">Learn More →</button>
+                    <span class="warning">Loading time takes a few seconds</span>
+                    <button class="card-btn">Live Site</button>
                 </div>
 
                 <!-- Project 4: Boosting -->

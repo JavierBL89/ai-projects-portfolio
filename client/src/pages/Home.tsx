@@ -87,15 +87,7 @@ export default function Home() {
             <a href="#contact" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
               Contact
             </a>
-            {isAuthenticated ? (
-              <Button variant="outline" size="sm">
-                Dashboard
-              </Button>
-            ) : (
-              <Button size="sm" asChild>
-                <a href={getLoginUrl()}>Sign In</a>
-              </Button>
-            )}
+
           </nav>
         </div>
       </header>

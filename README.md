@@ -1,10 +1,10 @@
 # AI/ML Projects Portfolio
 
-A comprehensive showcase of machine learning algorithms and techniques implemented from scratch. This portfolio demonstrates a deep understanding of fundamental ML concepts through practical implementations and a professional portfolio website.
+A comprehensive showcase of machine learning algorithms and techniques implemented from scratch. This is a **standalone HTML/CSS/JavaScript portfolio** that requires no build tools or dependencies.
 
 ## 🎯 Overview
 
-This project combines a curated collection of machine learning implementations with a modern, responsive portfolio website. Each algorithm is implemented with attention to mathematical foundations and practical optimization techniques.
+This portfolio demonstrates a deep understanding of fundamental ML concepts through practical implementations and a modern, responsive website. The entire site is built with vanilla HTML, CSS, and JavaScript for maximum compatibility and ease of deployment.
 
 ## 📚 Featured Projects
 
@@ -51,34 +51,23 @@ Unsupervised learning algorithm for partitioning data into k clusters with centr
 ## 🛠️ Technology Stack
 
 ### Frontend
-- **React 19** - Modern UI framework
-- **TypeScript** - Type-safe development
-- **Tailwind CSS 4** - Utility-first styling
-- **Vite** - Fast build tool and dev server
-- **shadcn/ui** - High-quality UI components
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with variables and media queries
+- **Vanilla JavaScript** - No frameworks or dependencies
+- **Responsive Design** - Mobile-first approach
 
-### Backend
-- **Express 4** - Web server framework
-- **tRPC 11** - End-to-end type-safe APIs
-- **Drizzle ORM** - Type-safe database queries
-- **MySQL/TiDB** - Database
-
-### ML/Data Science
-- **Python 3.11** - Primary ML language
-- **NumPy** - Numerical computing
-- **Pandas** - Data manipulation
-- **Scikit-learn** - Machine learning library
-- **Matplotlib/Seaborn** - Data visualization
-- **XGBoost/LightGBM** - Advanced boosting
+### Features
+- ✅ No build tools required
+- ✅ No dependencies to install
+- ✅ Light and dark mode support
+- ✅ Smooth animations and transitions
+- ✅ Fully responsive design
+- ✅ Keyboard navigation support
+- ✅ Accessibility optimized
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js 22.13.0+
-- Python 3.11+
-- pnpm (package manager)
-
-### Installation
+### Quick Start
 
 1. **Clone the repository**
    ```bash
@@ -86,77 +75,42 @@ Unsupervised learning algorithm for partitioning data into k clusters with centr
    cd ai-ml-projects-portfolio
    ```
 
-2. **Install dependencies**
-   ```bash
-   pnpm install
-   ```
+2. **Open in browser**
+   - Simply open `index.html` in your web browser
+   - Or use a local server:
+     ```bash
+     python3 -m http.server 8000
+     # Then visit http://localhost:8000
+     ```
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env.local
-   # Edit .env.local with your configuration
-   ```
-
-4. **Initialize the database**
-   ```bash
-   pnpm db:push
-   ```
-
-5. **Start the development server**
-   ```bash
-   pnpm dev
-   ```
-
-The application will be available at `http://localhost:3000`
+3. **Deploy anywhere**
+   - Upload the entire folder to any web hosting service
+   - Enable GitHub Pages in repository settings
+   - Use any static hosting service (Netlify, Vercel, etc.)
 
 ## 📁 Project Structure
 
 ```
 ai-ml-projects-portfolio/
-├── client/                 # Frontend React application
-│   ├── public/            # Static assets
-│   ├── src/
-│   │   ├── pages/         # Page components
-│   │   ├── components/    # Reusable UI components
-│   │   ├── lib/           # Utility functions
-│   │   └── index.css      # Global styles
-│   └── index.html         # HTML entry point
-├── server/                # Backend Express application
-│   ├── routers.ts         # tRPC procedure definitions
-│   ├── db.ts              # Database query helpers
-│   └── _core/             # Framework infrastructure
-├── drizzle/               # Database schema and migrations
-│   └── schema.ts          # Table definitions
-├── storage/               # S3 storage helpers
-├── shared/                # Shared constants and types
-└── package.json           # Project dependencies
-```
-
-## 🔧 Development Workflow
-
-### Frontend Development
-- Update components in `client/src/pages/` and `client/src/components/`
-- Styles use Tailwind CSS with custom theme variables in `client/src/index.css`
-- Use shadcn/ui components for consistent UI
-
-### Backend Development
-- Define database tables in `drizzle/schema.ts`
-- Add query helpers in `server/db.ts`
-- Create tRPC procedures in `server/routers.ts`
-
-### Database Changes
-```bash
-# After updating schema.ts
-pnpm db:push
+├── index.html                 # Main portfolio page
+├── assets/
+│   ├── css/
+│   │   ├── style.css         # Tailwind CSS styles
+│   │   └── standalone.css    # Custom portfolio styles
+│   └── js/
+│       └── main.js           # Interactive features
+├── README.md                 # This file
+└── package.json              # Project metadata
 ```
 
 ## 🎨 Design Features
 
-- **Responsive Design**: Mobile-first approach with breakpoints for all screen sizes
-- **Modern Aesthetics**: Gradient accents, smooth transitions, and professional typography
-- **Dark Mode Support**: Built-in dark theme support
-- **Accessibility**: Semantic HTML, keyboard navigation, and ARIA labels
-- **Performance**: Optimized images, lazy loading, and efficient bundling
+- **Modern Aesthetics**: Clean, professional design with gradient accents
+- **Responsive Layout**: Works perfectly on mobile, tablet, and desktop
+- **Dark Mode**: Automatically detects user's system preference
+- **Smooth Animations**: Fade-in effects and hover transitions
+- **Accessibility**: Semantic HTML, keyboard navigation, ARIA labels
+- **Performance**: Lightweight, no external dependencies
 
 ## 📊 Key Learning Outcomes
 
@@ -167,14 +121,31 @@ This portfolio demonstrates expertise in:
 - **Mathematical Foundations**: Understanding algorithms at a deep level
 - **Feature Engineering**: Preparing and transforming data
 - **Model Evaluation**: Metrics, cross-validation, and hyperparameter tuning
-- **Full-Stack Development**: Building complete web applications
+- **Web Development**: Building responsive, accessible websites
 
-## 🔐 Authentication
+## 🔧 Customization
 
-The application includes Manus OAuth integration for secure user authentication:
-- Protected procedures require authentication
-- Session management via JWT tokens
-- User roles for access control (admin/user)
+### Update Contact Information
+Edit the contact section in `index.html`:
+- Replace email address
+- Update GitHub profile URL
+- Add LinkedIn profile
+
+### Modify Colors
+Edit CSS variables in `assets/css/standalone.css`:
+```css
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #7c3aed;
+    /* ... other colors ... */
+}
+```
+
+### Add Project Links
+Update project card buttons in `index.html` to link to your actual projects:
+```html
+<a href="your-project-url" class="card-btn">Learn More →</a>
+```
 
 ## 📝 License
 
@@ -191,13 +162,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 🙏 Acknowledgments
 
-- Built with modern web technologies and best practices
+- Built with modern web standards and best practices
 - Inspired by the need to deeply understand machine learning algorithms
 - Thanks to the open-source community for excellent tools and libraries
 
 ---
 
-**Last Updated**: October 2025
+**Last Updated**: November 2025
 
-For more information about specific implementations, please explore the repository structure and individual project files.
+For more information about specific implementations, please explore the repository and individual project files.
 
